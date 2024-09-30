@@ -1,0 +1,31 @@
+.container{
+  padding: 20px;
+  background-color: bisque;
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+  margin: 20px;
+  margin-left: 200px;
+}
+#con{
+  background: yellow;
+}
+body{
+  background-color: aqua;
+}
+.child{
+  background-color: blueviolet;
+  height: 100px;
+  width: 100px;
+  margin-left: 100px;
+  
+}
+
+h1{
+  padding-top: 100px;
+  margin-left: 100px;
+  background-color: brown;
+}
+.h{
+background-color: beige;
+}
