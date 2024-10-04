@@ -1,0 +1,36 @@
+body{
+  background-color: black;
+}
+
+.container{
+  height: 400px;
+  border: 2px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.child1,.child2,.child3,.child4{
+  border: 1px solid rgb(161, 154, 154);
+  height: 300px;
+  width: 250px;
+  font-size: 2rem;
+  font-family: italic;
+  font-weight: 800;
+  text-align: center;
+}
+
+.child1{
+  background-color: red;
+  flex-basis: 50%;
+}
+.child2{
+  background-color: blue;
+}
+.child3{
+  background-color:yellow;
+}
+.child4{
+  background-color: yellowgreen;
+}
