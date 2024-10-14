@@ -3,34 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Amazon Clone</title>
     <link rel="stylesheet" href="amazon.css" />
   </head>
   <body>
-    <div class="container">
-      <div>
+    <header class="container">
+      <div class="logo">
         <img
           src="https://cdn.freebiesupply.com/images/large/2x/amazon-logo-white.png"
-          alt=""
+          alt="Amazon Logo"
         />
       </div>
-      <div>Deliver to India</div>
+      <div class="location">Deliver to India</div>
+      <input
+        type="text"
+        name="search"
+        placeholder="Search Amazon"
+        class="search-bar"
+      />
+      <div class="language">EN</div>
+      <div class="account">
+        <span>Hello, sign in</span><br />
+        <strong>Account & Lists</strong>
+      </div>
+      <div class="orders">
+        <span>Returns</span><br />
+        <strong>& Orders</strong>
+      </div>
+      <div class="cart">Cart</div>
+    </header>
 
-      <input type="text" name="" id="" placeholder="Search amazon" />
-      <div>EN</div>
+    <main class="cards">
+      <div class="card">
+        <h2>Up to 80% off | Electronics & accessories</h2>
+        <img
+          src="https://tse4.mm.bing.net/th?id=OIP.OU1CoSplSgGv9VpKxYneSAHaFc&pid=Api&P=0&h=220"
+          alt="Electronics"
+        />
+        <a href="#">See all offers</a>
+      </div>
 
-      <pre>
+      <div class="card">
+        <h2>Minimum 50% off | Home, kitchen & more</h2>
 
-        Hello,sign in 
-        Account & Lists
-      </pre>
+        <div style="display: flex; gap: 5px; margin-bottom: 2px">
+          <img
+            style="width: 100%; height: 80px"
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_1_1x._SY116_CB562243010_.jpg"
+            alt=""
+          />
+          <img
+            style="width: 100%; height: 80px"
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_2_1x._SY116_CB562243010_.jpg"
+            alt=""
+          />
+        </div>
+        <div style="display: flex; gap: 5px">
+          <img
+            style="width: 100%; height: 80px"
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_3_1x._SY116_CB562243010_.jpg"
+            alt=""
+          />
+          <img
+            style="width: 100%; height: 8*0px"
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_4_1x._SY116_CB562243010_.jpg"
+            alt=""
+          />
+        </div>
 
-      <pre>
+        <a href="#">See all offers</a>
+      </div>
 
-        Returns
-        &orders
-      </pre>
-      <div>Cart</div>
-    </div>
+      <div class="card">
+        <h2>Starting ₹299 | Latest styles from top brands</h2>
+        <img
+          src="https://tse1.mm.bing.net/th?id=OIP.fE1qV8vRk4xkA8nvm5GG1AAAAA&pid=Api&P=0&h=220"
+          alt="Fashion"
+        />
+        <a href="#">See all offers</a>
+      </div>
+
+      <div class="card">
+        <h2>Up to 80% off | Electronics & accessories</h2>
+        <img
+          src="https://tse4.mm.bing.net/th?id=OIP.OU1CoSplSgGv9VpKxYneSAHaFc&pid=Api&P=0&h=220"
+          alt="Electronics"
+        />
+        <a href="#">See all offers</a>
+      </div>
+    </main>
   </body>
 </html>

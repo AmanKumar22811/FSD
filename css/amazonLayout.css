@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: bisque;
 }
@@ -31,7 +37,6 @@ body {
   background-color: green;
   grid-column: 1 / 13;
   grid-row: 3/4;
-  
 }
 
 .container :nth-child(4) {
