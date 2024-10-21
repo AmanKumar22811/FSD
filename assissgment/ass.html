@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulb Counter</title>
+    <style>
+      .container {
+        height: 90vh;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: blueviolet;
+        margin-left: 400px;
+      }
+      .bulb-wrapper {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+      }
+      .bulb {
+        background-color: lightgreen;
+        height: 100px;
+        width: 100px;
+        margin-right: 10px;
+      }
+      .input-container {
+        display: none;
+      }
+      .bulb-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="button-container">
+        <button id="startBtn">Start</button>
+
+        <div class="input-container" id="inputContainer">
+          <input
+            type="number"
+            id="bulbCountInput"
+            placeholder="Enter number of bulbs"
+          />
+          <button id="clickMeBtn">Click Me</button>
+        </div>
+      </div>
+
+      <div class="bulb-container" id="bulbContainer"></div>
+    </div>
+
+    <script>
+      const startBtn = document.getElementById("startBtn");
+      const inputContainer = document.getElementById("inputContainer");
+      const clickMeBtn = document.getElementById("clickMeBtn");
+      const bulbContainer = document.getElementById("bulbContainer");
+
+      startBtn.addEventListener("click", () => {
+        startBtn.style.display = "none";
+        inputContainer.style.display = "block";
+      });
+
+      clickMeBtn.addEventListener("click", () => {
+        const bulbCount = document.getElementById("bulbCountInput").value;
+        bulbContainer.innerHTML = "";
+
+        for (let i = 0; i < bulbCount; i++) {
+          const bulbWrapper = document.createElement("div");
+          bulbWrapper.classList.add("bulb-wrapper");
+
+          const bulb = document.createElement("img");
+          bulb.src =
+            "https://pics.clipartpng.com/Light_Bulb_PNG_Clip_Art-2102.png";
+          bulb.classList.add("bulb");
+
+          const checkbox = document.createElement("input");
+          checkbox.type = "checkbox";
+
+          checkbox.addEventListener("change", () => {
+            if (checkbox.checked) {
+              bulb.src =
+                "https://pics.clipartpng.com/midle/Yellow_Light_Bulb_PNG_Clip_Art-2108.png";
+            } else {
+              bulb.src =
+                "https://pics.clipartpng.com/Light_Bulb_PNG_Clip_Art-2102.png";
+            }
+          });
+          bulbWrapper.appendChild(bulb);
+          bulbWrapper.appendChild(checkbox);
+          bulbContainer.appendChild(bulbWrapper);
+        }
+      });
+    </script>
+  </body>
+</html>
