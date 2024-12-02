@@ -1,9 +1,10 @@
 import React from "react";
 import "./student.css";
-const Student = ({ name, rollno, branch }) => {
+import img from "../../assets/react.svg";
+const Student = ({ data }) => {
   return (
     <div className="icard">
-      <table border={2}>
+      {/* <table border={2}>
         <thead>
           <tr>
             <th>Name</th>
@@ -18,7 +19,16 @@ const Student = ({ name, rollno, branch }) => {
             <td>{branch}</td>
           </tr>
         </tbody>
-      </table>
+      </table> */}
+      <img src={img} alt="image" />
+      {/* {
+        JSON.stringify(data)
+      } */}
+
+      <div className="college-header">ABES Engineering College</div>
+      <p>Student Name : {data.name}</p>
+      <p>Roll No. : {data.rollno}</p>
+      <p>Branch : {data.branch}</p>
     </div>
   );
 };
