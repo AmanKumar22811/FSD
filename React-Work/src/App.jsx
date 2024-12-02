@@ -1,4 +1,5 @@
 import "./App.css";
+import ImageManipulation from "./components/imageManipulation";
 import Student from "./components/Student/Student";
 import StudentState from "./components/studentState/StudentState";
 
@@ -19,6 +20,7 @@ function App() {
       <div>
         <StudentState />
       </div>
+      <ImageManipulation />
     </>
   );
 }
