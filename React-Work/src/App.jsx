@@ -29,14 +29,14 @@ function App() {
       {/* <Login loginData={rData} />
       {JSON.stringify(rData)}
       <Registration regData={setRdata} /> */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route path="/login" element={<Login />} />
             <Route path="/registration" element={<Registration />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   );
 }
