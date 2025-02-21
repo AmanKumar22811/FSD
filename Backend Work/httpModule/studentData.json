@@ -1,0 +1,22 @@
+[
+  {
+    "name":"abc",
+    "rollNo":"00",
+    "branch":"CSE",
+    "section":"A",
+    "college" : "ABESEC"
+  },
+  {
+    "name":"xyz",
+    "rollNo":"00",
+    "branch":"CSE",
+    "section":"A",
+    "college" : "ABESEC"
+  },{
+    "name":"pqr",
+    "rollNo":"01",
+    "branch":"CSE",
+    "section":"A",
+    "college" : "ABESEC"
+  }
+]
