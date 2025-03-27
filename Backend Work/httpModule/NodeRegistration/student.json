@@ -5,13 +5,13 @@
     "password": 123456
   },
   {
-    "name": "abc",
-    "email": "abc@gmail.com",
-    "password": 123456
-  },
-  {
     "name": "pqr",
     "email": "pqr@gmail.com",
     "password": 123456
+  },
+  {
+    "name": "abc",
+    "email": "abc@gmail.com",
+    "password": "1234"
   }
 ]
