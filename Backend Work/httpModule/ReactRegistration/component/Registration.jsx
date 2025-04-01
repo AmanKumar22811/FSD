@@ -33,7 +33,16 @@ const Registration = () => {
   };
 
   return (
-    <div>
+    <div
+      style={{
+        height: "100vh",
+        width: "100vw",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <form onSubmit={sendData}>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">
