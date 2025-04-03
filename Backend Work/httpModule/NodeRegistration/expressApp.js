@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 
 app.post("/data", (req, res) => {
   const { name, email } = req.body;
-
+  console.log(name, email);
   res.status(200).json({
     message: "Hit the /data API",
     name,
